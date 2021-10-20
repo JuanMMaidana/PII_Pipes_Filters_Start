@@ -10,6 +10,7 @@ namespace CompAndDel
     /// </summary>
     public interface IPicture
     {
+        
         /// <summary>
         /// Retorna el ancho de la imagen.
         /// </summary>
@@ -57,6 +58,8 @@ namespace CompAndDel
         /// Copia la imagen en una nueva imagen.
         /// </summary>
         /// <returns>Una copia de la imagen.</returns>
+        /// 
+        
         IPicture Clone();
     }
 }
