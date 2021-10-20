@@ -1,6 +1,8 @@
 ﻿using System;
 using CompAndDel.Pipes;
 using CompAndDel.Filters;
+using TwitterUCU;
+
 
 namespace CompAndDel
 {
@@ -23,6 +25,8 @@ namespace CompAndDel
         provider.SavePicture(picture2,"..\\..\\luke1.jpg");
         provider.SavePicture(picture3,"..\\..\\luke2.jpg");
 
+        var twitter = new TwitterImage();
+        Console.WriteLine(twitter.PublishToTwitter("hola2", @"..\\..\\luke1.jpg"));
         }
     }
 }
