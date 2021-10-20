@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+using TwitterUCU;
 
 namespace CompAndDel
 {
@@ -110,6 +111,20 @@ namespace CompAndDel
             }
             
             return pictureClone;
+        }
+
+        public void Save(string path)
+        {
+
+            PictureProvider provider = new PictureProvider();
+            provider.SavePicture(this, path);
+
+        }
+
+        public void Publish(string message, string path)
+        {
+            var twitterr = new TwitterImage();
+            Console.WriteLine(twitterr.PublishToTwitter(message,path));
         }
     }
 }

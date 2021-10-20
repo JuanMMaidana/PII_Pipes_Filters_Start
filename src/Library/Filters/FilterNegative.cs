@@ -36,7 +36,8 @@ namespace CompAndDel.Filters
                     result.SetColor(x, y, negativeColor);
                 }
             }
-
+            result.Save(@".\lukenegative.jpg");
+            result.Publish("Negativooo", @".\lukenegative.jpg");
             return result;
         }
     }

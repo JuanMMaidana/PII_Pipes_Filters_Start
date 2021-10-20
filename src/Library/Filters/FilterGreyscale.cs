@@ -31,7 +31,8 @@ namespace CompAndDel.Filters
                     result.SetColor(x, y, colorGris);
                 }
             }
-
+            result.Save(@".\lukegrey.jpg");
+            result.Publish("Greyyy", @".\lukegrey.jpg");
             return result;
         }
     }
